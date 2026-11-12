@@ -1,0 +1,17 @@
+
+# Python environment
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local files
+.env
+.env.*
+logs/
+data/output/
+
+# Editor and system files
+.vscode/
+.DS_Store
+Thumbs.db
