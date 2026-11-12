@@ -28,22 +28,24 @@ Model years: 2017, 2018 and 2019.
 
 ## Data Pipeline
 
-NHTSA API
-    |
-    v
+```text
+NHTSA REST API
+       |
+       v
 Python Data Ingestion
-    |
-    v
-Data Quality Checks & Cleaning
-    |
-    v
+       |
+       v
+Data Cleaning & Validation
+       |
+       v
 PostgreSQL Database
-    |
-    v
+       |
+       v
 SQL Analytical Views
-    |
-    v
+       |
+       v
 Power BI Dashboard
+```
 
 ## Key Features
 
@@ -97,6 +99,28 @@ Run tests:
 NHTSA Consumer Complaint Records (United States).
 
 https://www.nhtsa.gov/nhtsa-datasets-and-apis
+
+## Key Findings
+
+The dashboard dataset contains 5,306 consumer
+complaint records across nine model-year combinations.
+
+Complaint counts by vehicle model:
+
+| Vehicle Model | Reported Complaints |
+|---|---:|
+| Honda Accord | 3,140 |
+| Toyota Camry | 1,310 |
+| Nissan Altima | 856 |
+
+The highest complaint volume was recorded for
+the 2018 model year across the selected vehicles.
+
+Engine-related complaints are among the most
+frequently reported component categories.
+
+These results describe reporting patterns rather
+than relative vehicle reliability or defect rates.
 
 ## Limitations
 
