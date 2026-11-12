@@ -43,26 +43,6 @@ class TestDataQuality(unittest.TestCase):
         )
 
         self.assertEqual(len(rows), 5)
-    def test_remove_invalid_and_duplicate_rows(self):
-
-        rows = [
-            {"odi_number": "100"},
-            {"odi_number": "200"},
-            {"odi_number": "100 "},
-            {"odi_number": ""},
-            {"odi_number": "300"}
-        ]
-
-        cleaned = remove_invalid_and_duplicate_rows(rows)
-
-        self.assertEqual(len(cleaned), 3)
-
-        self.assertEqual(
-            [row["odi_number"] for row in cleaned],
-            ["100", "200", "300"]
-        )
-
-        self.assertEqual(len(rows), 5)
 
 if __name__ == "__main__":
     unittest.main()
